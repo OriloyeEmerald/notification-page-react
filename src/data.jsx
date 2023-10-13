@@ -18,7 +18,7 @@ const Notifications = [
     {
        id: 1,
        img: oval1,
-       message: `Mark Webber reacted ${emoji1} to your recent post My first tournament today!`,
+       message: `Mark Webber reacted "${emoji1}" to your recent post My first tournament today!`,
        time: '1m ago',
        boldText: 'My first tournament today!',
        boldText1: 'Mark Webber',
@@ -61,7 +61,7 @@ const Notifications = [
        message: 'Kimberly Smith commented on your picture ',
        time: '1 week ago',
        img2: rectangle1,
-       reactionMes: `Go girl! You are so beautiful "\u2764\uFE0F"`,
+       reactionMes: `Go girl! You are so beautiful \u2764\uFE0F`,
        boldText1: 'Kimberly Smith',
        unreadState: true
     },
@@ -69,7 +69,7 @@ const Notifications = [
     {
        id: 6,
        img: oval2,
-       message: `Nathan Peterson reacted ${emoji} to your recent post 5 end-game strategies to increase your win rate`,
+       message: `Nathan Peterson reacted "${emoji}" to your recent post 5 end-game strategies to increase your win rate`,
        time: '2 weeks ago',
        boldText: '5 end-game strategies to increase your win rate',
        reactionMed: emoji,

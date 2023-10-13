@@ -19,7 +19,7 @@ const MainCards = ({allState, handleNotificationClick}) => {
 
       
      return (
-      <div className={ !notification.unreadState || !allState ? 'mt-6 flex  gap-3 py-2 px-2 transition-color' : 'mt-6 flex gap-3 py-2 px-2 border bg-[#f7fafd] rounded-[.5rem] shadow-sm '} key={id} 
+      <div className={ !notification.unreadState || !allState ? 'mt-6 flex  gap-3 py-2 px-2' : 'mt-6 flex gap-3 py-2 px-2 border bg-[#f7fafd] rounded-[.5rem] shadow-sm '} key={id} 
       onClick={() => handleNotificationClick(notification.id)}
       >
         <div><img src={notification.img} alt="" /></div>
@@ -35,11 +35,11 @@ const MainCards = ({allState, handleNotificationClick}) => {
             {notification.img2 && ( <img src={notification.img2} alt="" className='w-8 h-8 ' />)}
             </div>
             {notification.reactionMed && <div style={{display: !notification.unreadState || !allState ? 'block' : 'none'}} className='mt-2' >
-               <p className='text-[1rem]  border  border-blue-600 rounded-[.6rem] py-2  text-left px-2'>{notification.boldText}</p>
-               <p className='mr-[16rem] sm:mr-[38rem] lg:mr-[70rem] mt-[-.7rem] text-[1.2rem]'>{notification.reactionMed}</p></div>}
-           {notification.reactionMes && <p className='text-left text-[1rem]  border border-blue-600 rounded-[.4rem] py-2 px-2 mt-2' style={{display: !notification.unreadState || !allState ? 'block' : 'none'}} >{notification.reactionMes}</p>}
+               <p className='text-[1rem]  border  border-blue-600 rounded-[.6rem] py-2 text-left px-2 con'>{notification.boldText}</p>
+               <p className='mr-[17rem] sm:mr-[38rem] lg:mr-[70rem] mt-[-.7rem] text-[1.2rem]'>{notification.reactionMed}</p></div>}
+           {notification.reactionMes && <p className='text-left text-[1rem]  border border-blue-600 rounded-[.4rem] py-2 px-2 mt-2 con' style={{display: !notification.unreadState || !allState ? 'block' : 'none'}} >{notification.reactionMes}</p>}
            {notification.readMessage && (
-            <div className={!notification.unreadState || !allState ? ' border  border-blue-600 rounded-[.4rem] mt-2 px-3 py-3' : ''}>
+            <div className={!notification.unreadState || !allState ? ' border  border-blue-600 rounded-[.4rem] mt-2 px-3 py-3 con' : ''}>
              <p className='text-left'style={{display: !notification.unreadState || !allState ? 'block' : 'none'}}>{notification.readMessage}</p>
             </div>
            )}

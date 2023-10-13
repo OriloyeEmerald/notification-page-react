@@ -10,8 +10,13 @@ function App() {
   const [allState, setAllState] = useState(true)
   
   const handleSetAllAsRead = () => {
-    setAllState(false);
-    setNotification(0)
+    setAllState(!allState);
+    if(allState) {
+      setNotification(0)
+    } else {
+      setNotification(7)
+    }
+    
   };
 
   
